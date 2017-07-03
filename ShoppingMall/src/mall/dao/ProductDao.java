@@ -18,4 +18,7 @@ public class ProductDao {
 		return sqlSessionFactory.openSession().selectList("productListAll");
 	}
 
+	public ProductBean productInfo(String productNo){
+		return sqlSessionFactory.openSession().selectOne("productInfo", productNo);
+	}
 }

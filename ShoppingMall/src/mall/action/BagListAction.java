@@ -8,12 +8,12 @@ import mall.bean.ProductBean;
 import mall.control.ActionForWard;
 import mall.dao.ProductDao;
 
-public class ProductListAction implements Action {
+public class BagListAction implements Action {
 	private String path;
 	private boolean redirect;
 	private ProductDao dao = new ProductDao();
 
-	public ProductListAction(String path, boolean redirect) {
+	public BagListAction(String path, boolean redirect) {
 		super();
 		this.path = path;
 		this.redirect = redirect;

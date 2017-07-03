@@ -15,6 +15,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     -->
  <typeAliases>
    <typeAlias type="mall.bean.ProductBean" alias="product"/>
+   <typeAlias type="mall.bean.MemberBean" alias="member"/>
  </typeAliases>
     <!-- DB연동 -->
     <environments default="development">
@@ -54,6 +55,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
     </environments>
     <mappers>
       <mapper resource="mall/xml/Product.xml"/>
+      <mapper resource="mall/xml/Member.xml"/>
     </mappers>
 </configuration>
 

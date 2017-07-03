@@ -12,29 +12,38 @@
 li{
 	background: white;
 }
+#userDiv{
+	margin: 0 auto;
+	text-align: center;
+}
 </style>
 <script>
 	$(function(){
 		/* ¸Þ´º È¿°ú */
-		$("li").click(function(){
-			
-		}).each(function(){
+		$("li").click().each(function(){
 			if($("li").text()==$(this).text()){
 				$(this).addClass("active");
 			}else{
 				$(this).removeClass("active");
 			}
 		});
+		
+		$("a#bag").click(function(){
+			$(location).attr('href', 'bagList.do?cmd=bagList');
+		});
 	});
 </script>
 <body>
 <ul class="nav nav-pills nav-justified navbar-fixed-top">
   <li role="presentation"><a href="#">Home</a></li>
-  <li role="presentation"><a href="#">Bag</a></li>
+  <li role="presentation"><a href="#" id="bag">Bag</a></li>
   <li role="presentation"><a href="#">Bag1</a></li>
   <li role="presentation"><a href="#">Bag2</a></li>
   <li role="presentation"><a href="#">Bag3</a></li>
   <li role="presentation"><a href="#">Bag4</a></li>
 </ul>
+<div id="userDiv">
+	<label>${id}´Ô ¾È³çÇÏ¼¼¿ä</label>
+</div>
 </body>
 </html>
