@@ -6,50 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>index</title>
 <link rel="stylesheet" href="/ShoppingMall/css/bootstrap.css">
+<link rel="stylesheet" href="/ShoppingMall/css/main.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
 </head>
-<style>
-body {
-	padding-top: 70px;
-	width: 100%;
-	background-image: url("/ShoppingMall/img/loginBack.jpg");
-}
-
-#innerDiv {
-	background-color: #CC9999;
-	width: 100%;
-	text-align: center;
-	margin: 0 auto;
-	padding: 20px;
-}
-
-#sendLogin {
-	width: 100%;
-}
-
-#backDiv {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	display: -webkit-flex;
-	-webkit-align-items: center;
-	-webkit-justify-content: center;
-}
-
-#id, #pw {
-	width: 90%;
-}
-</style>
 <script>
 	$(function() {
-		$("input#listSend").click(function() {
-			$(location).attr('href', 'productList.do?cmd=productList');
-		});
 		$("input#sendLogin").click(function(){
 			if($("input#id").val().trim().length == 0 ||$("input#pw").val().trim().length == 0 ){
 				$("input#id").val('');
@@ -84,8 +45,5 @@ body {
 			</div>
 		</form>
 	</div>
-
-	<input type="button" id="listSend">
-
 </body>
 </html>

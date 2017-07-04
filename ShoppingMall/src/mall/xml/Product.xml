@@ -15,6 +15,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		FROM PRODUCT
 		WHERE productNo = #{productNo}
 	</select>
+	
+	<select id="getTotalRow" resultType="java.lang.Integer">
+		SELECT COUNT(productNo) FROM PRODUCT
+	</select>
 </mapper>
 
 

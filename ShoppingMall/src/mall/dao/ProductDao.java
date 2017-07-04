@@ -21,4 +21,8 @@ public class ProductDao {
 	public ProductBean productInfo(String productNo){
 		return sqlSessionFactory.openSession().selectOne("productInfo", productNo);
 	}
+	
+	public int getTotalRow(){
+		return sqlSessionFactory.openSession().selectOne("getTotalRow");
+	}
 }
