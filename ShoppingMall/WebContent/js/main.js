@@ -1,6 +1,6 @@
 $(function() {
 	
-	$("tr").click(function() {
+	$("tr.trTr").click(function() {
 		if ($(this).attr("id") != "head") {
 				$(location).attr('href','productInfo.do?cmd=productInfo&productNo='+$(this).attr("id"));
 		}
@@ -16,7 +16,7 @@ $(function() {
 		}
 	});
 	
-	$("input").click(function(){
+	$("input[name='removeCart']").click(function(){
 		$(location).attr('href', 'productCartDelete.do?cmd=productCartDelete&productNo='+$(this).attr("id"));
 	});
 	

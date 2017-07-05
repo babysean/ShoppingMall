@@ -33,7 +33,8 @@
 						<td>${i.productPrice }</td>
 						<td><img src="/ShoppingMall${i.fileName1}" width="100"
 							height="100"></td>
-						<td><input type="button" id="${i.productNo}" class="btn btn-danger" value="삭제"></td>
+						<td>
+						<input type="button" id="${i.productNo}" name="removeCart" class="btn btn-danger" value="삭제"></td>
 					</tr>
 				</c:forEach>
 			</table>

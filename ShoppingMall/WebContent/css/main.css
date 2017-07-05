@@ -10,7 +10,7 @@ th, td {
 }
 
 .lili , #userId{
-	background-color: #28288C;
+	background-color: #A0A0C8;
 }
 
 #userId{
@@ -99,6 +99,6 @@ table{
 #thTd{
 	font-size: 16px;
 	font-weight: bold;
-	background-color: #28288C;
+	background-color: #000069;
 	color: white;
 }

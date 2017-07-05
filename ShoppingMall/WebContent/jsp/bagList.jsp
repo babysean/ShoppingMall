@@ -25,7 +25,7 @@
 					<td id="thTd">¿ÃπÃ¡ˆ</td>
 				</tr>
 				<c:forEach var="i" items="${productList}">
-					<tr id="${i.productNo}">
+					<tr class="trTr" id="${i.productNo}">
 						<td>${i.productCategory}</td>
 						<td>${i.productName }</td>
 						<td>${i.productOrigin }</td>
