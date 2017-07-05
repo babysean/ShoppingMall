@@ -1,5 +1,6 @@
 package mall.action;
 
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +22,7 @@ public class BagListAction implements Action {
 	}
 
 	public void paging(HttpServletRequest request) throws Exception {
+		HashMap<Object, Integer> map = new HashMap<Object, Integer>();
 		int currentPage = 0;
 		int pageScale = 5;
 		int totalRow = 0;
@@ -42,7 +44,10 @@ public class BagListAction implements Action {
 		if (totalPage <= endPage)
 			endPage = totalPage;
 
-		List<ProductBean> list = dao.productListAll();
+		map.put("start", start);
+		map.put("end", end);
+		
+		List<ProductBean> list = dao.productListAll(map);
 		
 		request.setAttribute("productList", list);
 		request.setAttribute("pageBean", new PageBean(currentPage, totalPage, startPage, endPage, currentBlock));

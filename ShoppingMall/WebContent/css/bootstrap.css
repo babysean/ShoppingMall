@@ -4731,6 +4731,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   margin: 20px 0;
   text-align: center;
   list-style: none;
+  background-color: white;
 }
 .pager li {
   display: inline;

@@ -9,25 +9,29 @@ th, td {
 	margin: 0 auto;
 }
 
-li {
-	background: white;
+li, #userId {
+	background-color: #dcdcdc;
+}
+
+#userId{
+	width: 100%;
 }
 
 #userDiv {
 	margin: 0 auto;
 	text-align: center;
+	background-color: #dcdcdc;
 }
 
 body {
 	padding-bottom: 70px;
-	background-color: #FF9999;
+	background-color: #A0A0C8;
 }
 
 hr {
 	size: 5px;
 }
 table{
-	background-color: white;
 }
 .layer {
 	position: absolute;
@@ -55,11 +59,11 @@ table{
 }
 
 #innerDiv {
-	background-color: #CC9999;
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 	padding: 20px;
+	background-color: #c8c8c8;
 }
 
 #sendLogin {
@@ -91,6 +95,5 @@ table{
 #thTd{
 	font-size: 16px;
 	font-weight: bold;
-	background-color: #333333;
 	color: white;
 }

@@ -1,5 +1,6 @@
 package mall.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -14,8 +15,8 @@ public class ProductDao {
 		sqlSessionFactory = SqlSessionFactoryManager.getSqlSessionFactory();
 	}
 
-	public List<ProductBean> productListAll() {
-		return sqlSessionFactory.openSession().selectList("productListAll");
+	public List<ProductBean> productListAll(HashMap<Object, Integer> map) {
+		return sqlSessionFactory.openSession().selectList("productListAll",map);
 	}
 
 	public ProductBean productInfo(String productNo){

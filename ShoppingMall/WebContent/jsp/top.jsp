@@ -42,9 +42,8 @@
   <li role="presentation"><a href="#" id="bag">Bag</a></li>
   <li role="presentation"><a href="#" id="cart">Cart</a></li>
   <li role="presentation"><a href="#" id="logout">Logout</a></li>
+  <div id="userId"><label><br>${id}¥‘ æ»≥Á«œººø‰<br><br></label></div>
 </ul>
-
-	<label>${id}¥‘ æ»≥Á«œººø‰</label>
 </div>
 </body>
 </html>
