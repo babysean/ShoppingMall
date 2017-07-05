@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="/ShoppingMall/css/bootstrap.min.css">
 <link rel="stylesheet" href="/ShoppingMall/css/main.css">
 <script src="/ShoppingMall/js/bootstrap.min.js"></script>
-<title>Insert title here</title>
+<script src="/ShoppingMall/js/main.js"></script>
+<title>가방사</title>
 </head>
 <body>
 	<jsp:include page="top.jsp" />

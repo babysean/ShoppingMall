@@ -9,12 +9,13 @@ th, td {
 	margin: 0 auto;
 }
 
-li, #userId {
-	background-color: #dcdcdc;
+.lili , #userId{
+	background-color: #28288C;
 }
 
 #userId{
 	width: 100%;
+	color: white;
 }
 
 #userDiv {
@@ -31,8 +32,11 @@ body {
 hr {
 	size: 5px;
 }
+
 table{
+	background-color: white;
 }
+
 .layer {
 	position: absolute;
 	top: 0;
@@ -95,5 +99,6 @@ table{
 #thTd{
 	font-size: 16px;
 	font-weight: bold;
+	background-color: #28288C;
 	color: white;
 }

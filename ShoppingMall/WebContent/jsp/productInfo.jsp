@@ -9,19 +9,7 @@
 <link rel="stylesheet" href="/ShoppingMall/css/main.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
 <script src="/ShoppingMall/js/bootstrap.min.js"></script>
-<script>
-	$(function() {
-		$("img#bagImg1").mouseover(function() {
-			$("img#bagImg1").attr("src", $("img#bagSmallImg2").attr("src"));
-		});
-		$("img#bagImg1").mouseout(function() {
-			$("img#bagImg1").attr("src", $("img#bagSmallImg1").attr("src"));
-		});
-		$("input#cartSend").click(function(){
-			$(location).attr('href', 'productCart.do?cmd=productCart&productNo='+$("td#tdId").text());
-		});
-	});
-</script>
+<script src="/ShoppingMall/js/main.js"></script>
 </head>
 <body>
 	<jsp:include page="top.jsp" />

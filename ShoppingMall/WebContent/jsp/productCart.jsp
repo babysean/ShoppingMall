@@ -10,13 +10,7 @@
 <link rel="stylesheet" href="/ShoppingMall/css/bootstrap.css">
 <link rel="stylesheet" href="/ShoppingMall/css/main.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-<script>
-	$(function() {
-		$("input").click(function(){
-			$(location).attr('href', 'productCartDelete.do?cmd=productCartDelete&productNo='+$(this).attr("id"));
-		});
-	});
-</script>
+<script src="/ShoppingMall/js/main.js"></script>
 </head>
 <body>
 	<jsp:include page="top.jsp" />

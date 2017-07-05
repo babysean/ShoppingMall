@@ -8,20 +8,8 @@
 <link rel="stylesheet" href="/ShoppingMall/css/bootstrap.css">
 <link rel="stylesheet" href="/ShoppingMall/css/main.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="/ShoppingMall/js/main.js"></script>
 </head>
-<script>
-	$(function() {
-		$("input#sendLogin").click(function(){
-			if($("input#id").val().trim().length == 0 ||$("input#pw").val().trim().length == 0 ){
-				$("input#id").val('');
-				$("input#pw").val('');
-				alert('id와 pw를 확인하세요.');
-			}else{
-				$("form#frm").submit();
-			}
-		});
-	});
-</script>
 <body>
 	<div id="backDiv">
 		<form action="login.do?cmd=login" method="post" name="frm" id="frm">

@@ -8,41 +8,16 @@
 <link rel="stylesheet" href="/ShoppingMall/css/bootstrap.css">
 <link rel="stylesheet" href="/ShoppingMall/css/main.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="/ShoppingMall/js/main.js"></script>
 </head>
-<script>
-	$(function(){
-		/* ¸Þ´º È¿°ú */
-		$("li").click().each(function(){
-			if($("li").text()==$(this).text()){
-				$(this).addClass("active");
-			}else{
-				$(this).removeClass("active");
-			}
-		});
-		
-		$("a#home").click(function(){
-			$(location).attr('href', 'home.jsp');
-		});
-		$("a#bag").click(function(){
-			$(location).attr('href', 'bagList.do?cmd=bagList');
-		});
-		$("a#cart").click(function(){
-			$(location).attr('href', 'productCart.jsp');
-		});
-		$("a#logout").click(function(){
-			$(location).attr('href', 'logout.do?cmd=logout');
-		});
-		
-	});
-</script>
 <body>
 <div id="userDiv">
 <ul class="nav nav-pills nav-justified navbar-fixed-top">
-  <li role="presentation"><a href="#" id="home">Home</a></li>
-  <li role="presentation"><a href="#" id="bag">Bag</a></li>
-  <li role="presentation"><a href="#" id="cart">Cart</a></li>
-  <li role="presentation"><a href="#" id="logout">Logout</a></li>
-  <div id="userId"><label><br>${id}´Ô ¾È³çÇÏ¼¼¿ä<br><br></label></div>
+	<li class="lili" role="presentation"><a href="#" id="home">Home</a></li>
+	<li class="lili" role="presentation"><a href="#" id="bag">Bag</a></li>
+	<li class="lili" role="presentation"><a href="#" id="cart">Cart</a></li>
+	<li class="lili" role="presentation"><a href="#" id="logout">Logout</a></li>
+	<div id="userId"><label>${id}´Ô ¾È³çÇÏ¼¼¿ä<br><br></label></div>
 </ul>
 </div>
 </body>

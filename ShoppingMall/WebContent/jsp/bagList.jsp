@@ -9,15 +9,7 @@
 <link rel="stylesheet" href="/ShoppingMall/css/bootstrap.css">
 <link rel="stylesheet" href="/ShoppingMall/css/main.css">
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-<script>
-$(function() {
-	$("tr").click(function() {
-		if ($(this).attr("id") != "head") {
-				$(location).attr('href','productInfo.do?cmd=productInfo&productNo='+$(this).attr("id"));
-		}
-	});
-});
-</script>
+<script src="/ShoppingMall/js/main.js"></script>
 </head>
 <body>
 	<jsp:include page="top.jsp" />
