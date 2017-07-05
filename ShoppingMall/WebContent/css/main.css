@@ -26,7 +26,7 @@ th, td {
 
 body {
 	padding-bottom: 70px;
-	background-color: #B4B4DC;
+	background-color: #FFE3EE;
 }
 
 hr {
@@ -54,6 +54,10 @@ table{
 .tableDiv, .btnDiv {
 	margin: 0 auto;
 	width: 70%;
+}
+
+.idPwSpan{
+	width: 90%;	
 }
 
 .centerDiv {

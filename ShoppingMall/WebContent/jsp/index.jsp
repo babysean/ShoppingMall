@@ -15,13 +15,13 @@
 		<form action="login.do?cmd=login" method="post" name="frm" id="frm">
 			<div id="innerDiv" class="form-group">
 				<div class="form-group">
-					<label>Id</label>
+					<span class="label label-default idPwSpan">Id</span>
 				</div>
 				<div class="form-group">
 					<input type="text" id="id" name="id" placeholder="아이디를 입력하세요.">
 				</div>
 				<div class="form-group">
-					<label>Pw</label>
+					<span class="label label-default idPwSpan">Pw</span>
 				</div>
 				<div class="form-group">
 					<input type="password" id="pw" name="pw" placeholder="패스워드를 입력하세요.">
