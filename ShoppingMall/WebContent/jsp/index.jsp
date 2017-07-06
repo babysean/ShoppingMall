@@ -15,13 +15,16 @@
 		<form action="login.do?cmd=login" method="post" name="frm" id="frm">
 			<div id="innerDiv" class="form-group">
 				<div class="form-group">
-					<span class="label label-default idPwSpan">Id</span>
+					<img src="/ShoppingMall/img/mainLogo.jpg" width="300px" height="100px">
+				</div>
+				<div class="form-group">
+					<span class="label label-default idPwSpan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 				</div>
 				<div class="form-group">
 					<input type="text" id="id" name="id" placeholder="아이디를 입력하세요.">
 				</div>
 				<div class="form-group">
-					<span class="label label-default idPwSpan">Pw</span>
+					<span class="label label-default idPwSpan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pw&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 				</div>
 				<div class="form-group">
 					<input type="password" id="pw" name="pw" placeholder="패스워드를 입력하세요.">

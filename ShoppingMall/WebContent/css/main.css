@@ -9,24 +9,24 @@ th, td {
 	margin: 0 auto;
 }
 
-.lili , #userId{
-	background-color: #A0A0C8;
+.lili{
+	background-color: black;
 }
 
 #userId{
 	width: 100%;
-	color: white;
+	background-color: black;
 }
 
 #userDiv {
 	margin: 0 auto;
 	text-align: center;
-	background-color: #dcdcdc;
+	background-color: black;
+	color:white;
 }
 
 body {
 	padding-bottom: 70px;
-	background-color: #FFE3EE;
 }
 
 hr {
@@ -71,7 +71,7 @@ table{
 	text-align: center;
 	margin: 0 auto;
 	padding: 20px;
-	background-color: #c8c8c8;
+	background-color: black;
 }
 
 #sendLogin {
@@ -93,7 +93,7 @@ table{
 }
 
 #id, #pw {
-	width: 90%;
+	width: 100%;
 }
 
 #tableDiv {
