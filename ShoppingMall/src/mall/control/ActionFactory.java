@@ -13,7 +13,7 @@ public class ActionFactory {
 	public static Action getAction(String cmd) {
 		Action action = null;
 		if (cmd.equals("bagList")) {
-			action = new BagListAction("bagList.jsp", false);
+			action = new BagListAction("indexTest.jsp", false);
 		} else if (cmd.equals("login")) {
 			action = new LoginAction("home.jsp", false);
 		} else if (cmd.equals("productInfo")) {
