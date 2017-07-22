@@ -10,7 +10,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		DESC)RM, PRODUCTNO, PRODUCTCATEGORY, PRODUCTORIGIN,
 		PRODUCTPRICE, PRODUCTNAME, FILENAME1, FILENAME2
 		FROM PRODUCT)
-		WHERE RM BETWEEN #{start} AND #{end}
+		<if test="start!=null">
+			<where>
+				RM BETWEEN #{start} AND #{end}
+			</where>
+		</if>
 		ORDER BY PRODUCTNO
 	</select>
 	

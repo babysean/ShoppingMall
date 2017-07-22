@@ -24,7 +24,7 @@ public class LoginAction implements Action {
 		if (dao.idCheck(id, request.getParameter("pw"))) {
 			session.setAttribute("id", id);
 		} else {
-			path = "index.jsp";
+			path = "login.jsp";
 		}
 		return new ActionForWard(path, redirect);
 	}

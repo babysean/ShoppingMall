@@ -13,17 +13,17 @@ public class ActionFactory {
 	public static Action getAction(String cmd) {
 		Action action = null;
 		if (cmd.equals("bagList")) {
-			action = new BagListAction("indexTest.jsp", false);
+			action = new BagListAction("bagList.jsp", false);
 		} else if (cmd.equals("login")) {
-			action = new LoginAction("home.jsp", false);
+			action = new LoginAction("jsp/bangSa.jsp", true);
 		} else if (cmd.equals("productInfo")) {
-			action = new ProductInfoAction("productInfo.jsp", false);
+			action = new ProductInfoAction("bagInfo.jsp", false);
 		} else if (cmd.equals("productCart")) {
 			action = new ProductCartAction("bagList.do?cmd=bagList", false);
 		} else if (cmd.equals("productCartDelete")) {
 			action = new ProductCartDeleteAction("productCart.jsp",true);
 		} else if(cmd.equals("logout")) {
-			action = new LogoutAction("index.jsp",true);
+			action = new LogoutAction("../login.jsp",true);
 		}
 		return action;
 

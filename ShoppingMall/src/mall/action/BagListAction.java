@@ -56,7 +56,8 @@ public class BagListAction implements Action {
 	@Override
 	public ActionForWard execute(HttpServletRequest request) {
 		try {
-			paging(request);
+			List<ProductBean> list = dao.productListAll(null);
+			request.setAttribute("productList", list);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
