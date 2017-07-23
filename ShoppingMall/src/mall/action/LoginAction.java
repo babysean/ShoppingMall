@@ -5,12 +5,14 @@ import javax.servlet.http.HttpSession;
 
 import mall.control.ActionForWard;
 import mall.dao.MemberDao;
+import mall.dao.ProductDao;
 
 public class LoginAction implements Action {
 	private String path;
 	private boolean redirect;
 	private MemberDao dao = new MemberDao();
-
+	private ProductDao product = new ProductDao();
+	
 	public LoginAction(String path, boolean redirect) {
 		super();
 		this.path = path;

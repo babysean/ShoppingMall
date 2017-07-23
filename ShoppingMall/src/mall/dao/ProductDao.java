@@ -26,4 +26,20 @@ public class ProductDao {
 	public int getTotalRow(){
 		return sqlSessionFactory.openSession().selectOne("getTotalRow");
 	}
+	
+	public void addLike(HashMap<String, String> map){
+		try {
+			sqlSessionFactory.openSession().insert("addLike", map);
+			sqlSessionFactory.openSession().commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			sqlSessionFactory.openSession().rollback();
+		} finally {
+			sqlSessionFactory.openSession().close();
+		}
+	}
+	
+	public List<ProductBean> listLike(String id){
+		return sqlSessionFactory.openSession().selectList("listLike", id);
+	}
 }

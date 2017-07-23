@@ -24,6 +24,7 @@ public class ProductCartAction implements Action {
 	public ActionForWard execute(HttpServletRequest request) {
 		ProductBean bean = null;
 		ArrayList<ProductBean> cart = null;
+		String path = "";
 		HttpSession session = request.getSession();
 		boolean state = false;
 		String productNo = request.getParameter("productNo");
@@ -42,6 +43,7 @@ public class ProductCartAction implements Action {
 				cart.add(bean);
 			}
 			session.setAttribute("cart", cart);
+			path = request.getHeader("referer");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -28,6 +28,21 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="getTotalRow" resultType="java.lang.Integer">
 		SELECT COUNT(productNo) FROM PRODUCT
 	</select>
+	
+	<insert id="addLike" parameterType="java.util.HashMap">
+		INSERT INTO LIKEE(ID,PRODUCTNO)
+		VALUES(#{id}, #{productNo})
+	</insert>
+	
+	<select id="listLike" parameterType="java.lang.String" resultType="product">
+		SELECT PRODUCTNO, PRODUCTCATEGORY, PRODUCTORIGIN,
+		PRODUCTPRICE, PRODUCTNAME, FILENAME1, FILENAME2
+		FROM PRODUCT
+		WHERE PRODUCTNO IN
+		(SELECT PRODUCTNO
+		FROM LIKEE
+		WHERE id = #{id})
+	</select>
 </mapper>
 
 

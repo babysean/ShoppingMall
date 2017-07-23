@@ -22,6 +22,7 @@ public class ProductCartDeleteAction implements Action {
 	public ActionForWard execute(HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		String productNo = request.getParameter("productNo");
+		String path = "";
 		ArrayList<ProductBean> cart = (ArrayList<ProductBean>) session.getAttribute("cart");
 		if (cart == null) {
 			cart = new ArrayList<ProductBean>();
@@ -33,9 +34,8 @@ public class ProductCartDeleteAction implements Action {
 			}
 		}
 		session.setAttribute("cart", cart);
-		if (cart.size() == 0) {
-			path = "bagList.do?cmd=bagList";
-		}
+		
+		path = request.getHeader("referer");
 		return new ActionForWard(path, redirect);
 	}
 
