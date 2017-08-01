@@ -75,6 +75,10 @@
 											<h3>${i.productName}</h3>
 											<p>${i.productPrice}원</p>
 											<p>
+												<button class="btn btn-default infoProduct" role="button"
+													id="${i.productNo}">
+													상세보기
+												</button>
 												<button class="btn btn-primary addCart" role="button"
 													id="${i.productNo}">
 													<img src="/ShoppingMall/img/heart.png" width="15"
@@ -147,14 +151,15 @@
 				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
 			}
 		}
-		$("button.addCart")
-				.click(
-						function() {
-							var result = confirm('장바구니에 추가하시겠습니까?');
-							if (result) {
-								location.href = "productCart.do?cmd=productCart&productNo="+$(this).attr("id");
-							}
-						});
+		$("button.addCart").click(function() {
+			var result = confirm('장바구니에 추가하시겠습니까?');
+			if (result) {
+				location.href = "productCart.do?cmd=productCart&productNo="+$(this).attr("id");
+			}
+		});
+		$("button.infoProduct").click(function(){
+			location.href = "productInfo.do?cmd=productInfo&productNo="+$(this).attr("id");
+		});
 	});
 </script>
 </html>
