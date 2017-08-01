@@ -22,7 +22,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		SELECT PRODUCTNO, PRODUCTCATEGORY, PRODUCTORIGIN,
 		PRODUCTPRICE, PRODUCTNAME, FILENAME1, FILENAME2
 		FROM PRODUCT
-		WHERE productNo = #{productNo}
+		WHERE productNo = #{productno}
 	</select>
 	
 	<select id="getTotalRow" resultType="java.lang.Integer">

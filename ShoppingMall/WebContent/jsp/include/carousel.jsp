@@ -22,32 +22,29 @@
 							<!-- Wrapper for slides -->
 							<div class="carousel-inner">
 								<div class="item active">
-									<img src="/ShoppingMall/assets/img/bg2.jpeg"
+									<img src="/ShoppingMall/img/img1.jpg"
 										alt="Awesome Image">
 									<div class="carousel-caption">
 										<h4>
-											<i class="material-icons">location_on</i> Yellowstone
-											National Park, United States
+											<i class="material-icons">location_on</i> 피크닉에 가볍게 가지고 나가보세요
 										</h4>
 									</div>
 								</div>
 								<div class="item">
-									<img src="/ShoppingMall/assets/img/bg3.jpeg"
+									<img src="/ShoppingMall/img/img2.jpg"
 										alt="Awesome Image">
 									<div class="carousel-caption">
 										<h4>
-											<i class="material-icons">location_on</i> Somewhere Beyond,
-											United States
+											<i class="material-icons">location_on</i> 네모네모 가방의 탁월한 각
 										</h4>
 									</div>
 								</div>
 								<div class="item">
-									<img src="/ShoppingMall/assets/img/bg4.jpeg"
+									<img src="/ShoppingMall/img/img3.jpg"
 										alt="Awesome Image">
 									<div class="carousel-caption">
 										<h4>
-											<i class="material-icons">location_on</i> Yellowstone
-											National Park, United States
+											<i class="material-icons">location_on</i> 그저그런 검은 가방
 										</h4>
 									</div>
 								</div>

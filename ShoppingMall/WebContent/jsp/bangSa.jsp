@@ -34,42 +34,9 @@
 
 <body class="index-page">
 	<!-- Navbar -->
-	<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse"
-				data-target="#navigation-index">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a href="#">
-				<div class="logo-container">
-					<div class="logo">
-						<img src="/ShoppingMall/assets/img/logo.png">
-					</div>
-					<div class="brand">${id}</div>
-				</div>
-			</a>
-		</div>
-		<div class="collapse navbar-collapse" id="navigation-index">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" id="homee"> <i class="material-icons">dashboard</i>
-						홈
-				</a></li>
-				<li><a href="#" id="productList"> <i class="material-icons">dashboard</i>
-						상품
-				</a></li>
-				<li><a href="#" id="cartt"> <i class="material-icons">dashboard</i>
-						장바구니
-				</a></li>
-				<li><a href="logout.do?cmd=logout"> <i
-						class="material-icons">face</i> 로그아웃
-				</a></li>
-			</ul>
-		</div>
-	</div>
-	</nav>
+	<nav
+		class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<jsp:include page="include/bar.jsp" /> </nav>
 	<!-- End Navbar -->
 
 	<!-- Start Body -->
@@ -121,7 +88,7 @@
 		<!-- End footer -->
 	</div>
 	<!-- End Body -->
-	
+
 </body>
 
 <!--   Core JS Files   -->
@@ -146,91 +113,16 @@
 <script src="/ShoppingMall/js/main.js"></script>
 <script>
 	$(function() {
-		window.onload = function(){
+		window.onload = function() {
 			materialKit.initSliders();
 			window_width = $(window).width();
-		
+
 			if (window_width >= 992) {
 				big_image = $('.wrapper > .header');
-		
+
 				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
 			}
 		}
-		
-		$("a#productList").click(function() {
-			$.ajax({
-				url : "bagList.do?cmd=bagList",
-				type : "POST",
-				dataType : "html",
-				beforeSend : function() {
-					$("div#mainDiv").html("<div style=\"text-align:center;\"><img src=\"/ShoppingMall/img/loading.gif\" width=\"50\" height=\"50\"/></div>");
-				},
-				success : function(data) {
-					$("div#mainDiv").html(data);
-				},
-				error : function(request, status, error) {
-					alert("code:" + request.status
-							+ "\n" + "message:"
-							+ request.responseText
-							+ "\n" + "error:" + error);
-				}
-			});
-		});
-		$("a#cartt").click(function() {
-			$.ajax({
-				url : "bagCart.jsp",
-				type : "POST",
-				dataType : "html",
-				beforeSend : function() {
-					$("div#mainDiv").html("<div style=\"text-align:center;\"><img src=\"/ShoppingMall/img/loading.gif\" width=\"50\" height=\"50\"/></div>");
-				},
-				success : function(data) {
-					$("div#mainDiv").html(data);
-				},
-				error : function(request, status, error) {
-					alert("code:" + request.status
-							+ "\n" + "message:"
-							+ request.responseText
-							+ "\n" + "error:" + error);
-				}
-			});
-		});
-		$("a#likee").click(function() {
-			$.ajax({
-				url : "bagLike.jsp",
-				type : "POST",
-				dataType : "html",
-				beforeSend : function() {
-					$("div#mainDiv").html("<div style=\"text-align:center;\"><img src=\"/ShoppingMall/img/loading.gif\" width=\"50\" height=\"50\"/></div>");
-				},
-				success : function(data) {
-					$("div#mainDiv").html(data);
-				},
-				error : function(request, status, error) {
-					alert("code:" + request.status
-							+ "\n" + "message:"
-							+ request.responseText
-							+ "\n" + "error:" + error);
-				}
-			});
-		});
-
-		$("a#homee").click(function() {
-			$.ajax({
-				url : "include/carousel.jsp",
-				type : "POST",
-				dataType : "html",
-				success : function(data) {
-					$("div#mainDiv").html(data);
-				},
-				error : function(request, status, error) {
-					alert("code:" + request.status + "\n" + "message:"
-							+ request.responseText + "\n" + "error:"
-							+ error);
-				}
-			});
-		});
-
 	});
 </script>
 </html>

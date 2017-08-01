@@ -44,7 +44,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
              = JNDI : 미리 설정되어 있는 Connection을 사용
          -->
          <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
-         <property name="url" value="jdbc:oracle:thin:@psh-oracle.c6levu9qrvwi.us-east-1.rds.amazonaws.com:1521:orcl"/>
+         <property name="url" value="jdbc:oracle:thin:@psh-oracle.csnsvkq0ah8f.ap-northeast-2.rds.amazonaws.com:1521:orcl"/>
          <property name="username" value="babysean"/>
          <property name="password" value="12341234"/>
         </dataSource>

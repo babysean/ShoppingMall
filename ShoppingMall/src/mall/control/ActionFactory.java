@@ -6,6 +6,8 @@ import mall.action.LogoutAction;
 import mall.action.ProductCartAction;
 import mall.action.ProductCartDeleteAction;
 import mall.action.BagListAction;
+import mall.action.GoCartAction;
+import mall.action.HomeAction;
 
 public class ActionFactory {
 
@@ -15,8 +17,12 @@ public class ActionFactory {
 			action = new BagListAction("bagList.jsp", false);
 		} else if (cmd.equals("login")) {
 			action = new LoginAction("jsp/bangSa.jsp", true);
+		} else if (cmd.equals("home")){
+			action = new HomeAction("bangSa.jsp", true);
 		} else if (cmd.equals("productCart")) {
-			action = new ProductCartAction("", true);
+			action = new ProductCartAction("bagCart.jsp", true);
+		} else if(cmd.equals("goCart")){
+			action = new GoCartAction("bagCart.jsp",true);
 		} else if (cmd.equals("productCartDelete")) {
 			action = new ProductCartDeleteAction("",true);
 		} else if(cmd.equals("logout")) {
